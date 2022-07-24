@@ -65,11 +65,57 @@
     <button class="button red-bg default">Free consultation</button>
   </div>
 </div>
-<nav class="section-footer">
-  <div class="logo-box">
-    <img src="../assets/logo.svg" />
+<!-- [cellsToShow]="3" -->
+<div class="section-carousel">
+  <h2 class="center">My work</h2>
+  <carousel
+    #myCarousel
+    [height]="275"
+    [cellsToShow]="slides"
+    [margin]="20"
+    [arrows]="false"
+  >
+    <div class="carousel-cell">
+      <img src="../assets/image-slide-1.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img src="../assets/image-slide-2.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img src="../assets/image-slide-3.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img src="../assets/image-slide-4.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img src="../assets/image-slide-5.jpg" />
+    </div>
+  </carousel>
+  <div class="nav-icons">
+    <div class="icon left-icon black-bg">
+      <img src="../assets/icon-arrow-left.svg" (click)="prev()" />
+    </div>
+    <div class="icon right-icon black-bg">
+      <img src="../assets/icon-arrow-right.svg" (click)="next()" />
+    </div>
   </div>
-  <div>
-    <button class="button black">Free consultation</button>
+</div>
+<footer class="section-footer">
+  <div class="cta-block black-bg">
+    <h2>Book a call with me</h2>
+    <p class="supporting-txt">
+      I’d love to have a chat to see how I can help you. The best first step is
+      for us to discuss your project during a free consultation. Then we can
+      move forward from there.
+    </p>
+    <button class="button default">Free consultation</button>
   </div>
-</nav>
+  <div class="bottom">
+    <div class="logo-box">
+      <img src="../assets/logo.svg" />
+    </div>
+    <div>
+      <button class="button black">Free consultation</button>
+    </div>
+  </div>
+</footer>
