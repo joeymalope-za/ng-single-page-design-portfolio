@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  --light-cream1: #fff7f0;
+  --black1: #030303;
+
+  background-color: var(--light-cream, #fff7f0);
+  color: var(--black, #030303);
+}
