@@ -12,9 +12,13 @@ export class AppComponent {
 
   title = 'Single Page Portfolio';
   slides:number; 
+  slideSize:number = 375;
 
   constructor(){
-    this.slides = (window.innerWidth > 575)? 3 : 1;
+    //the slider library isn't natively responsive 
+    //So this code is fixes that 
+    this.slides = (window.innerWidth > 1024)? 3 : 1;
+    this.slideSize = (window.innerWidth > 1024)? 275 : 375;
   }
 
   next(){

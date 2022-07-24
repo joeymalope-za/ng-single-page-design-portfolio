@@ -65,15 +65,15 @@
     <button class="button red-bg default">Free consultation</button>
   </div>
 </div>
-<!-- [cellsToShow]="3" -->
 <div class="section-carousel">
   <h2 class="center">My work</h2>
   <carousel
     #myCarousel
-    [height]="275"
+    [height]="slideSize"
     [cellsToShow]="slides"
     [margin]="20"
     [arrows]="false"
+    [borderRadius]="10"
   >
     <div class="carousel-cell">
       <img src="../assets/image-slide-1.jpg" />

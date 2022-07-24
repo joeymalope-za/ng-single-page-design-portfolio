@@ -60,10 +60,6 @@
   background: var(--dark-purple);
 }
 
-* {
-  //   border: solid;
-}
-
 h1 {
   font-size: 3.5rem;
   line-height: 70px;
@@ -84,7 +80,6 @@ h3 {
 }
 
 .button {
-  //   max-height: 5vh;
   border-radius: 2rem;
   padding: 1.2rem 2rem;
   color: white;
@@ -119,7 +114,7 @@ nav {
   background: var(--light-cream);
   position: sticky;
   z-index: 10001;
-  top: 1px;
+  top: 0px;
   .logo-box {
     height: 3rem;
     width: 3rem;
@@ -146,7 +141,6 @@ p {
   min-height: 90vh;
   box-sizing: content-box;
   display: flex;
-  //   justify-content: space-around;
   flex-direction: column;
   text-align: center;
 
@@ -154,10 +148,8 @@ p {
     display: flex;
     justify-content: space-evenly;
     min-height: 45vh;
-    // border: solid;
-    // flex-wrap: wrap;
+
     .col {
-      //   border: solid;
       flex: 100%;
       margin: 1rem;
 
@@ -184,7 +176,6 @@ p {
     .row {
       display: flex;
       flex: 100%;
-      //   height: 50%;
     }
   }
 }
@@ -192,6 +183,11 @@ p {
 .section-intro {
   display: flex;
   gap: 4rem;
+
+  h1 {
+    margin: 0;
+  }
+
   .photo-box {
     img {
       width: 100%;
@@ -218,6 +214,10 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  img {
+    border-radius: 1rem;
+  }
 
   .nav-icons {
     display: inherit;
@@ -320,6 +320,17 @@ p {
   [class*="section-"] {
     width: 90vw;
     margin: auto;
+  }
+
+  .button {
+    border-radius: 2rem;
+    padding: 1.2rem 2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    min-width: 8.5vw;
+    width: auto;
+    max-width: 30vw;
   }
 
   .section-hero {
