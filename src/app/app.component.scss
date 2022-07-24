@@ -27,6 +27,7 @@
 [class*="section-"] {
   width: 70vw;
   margin: auto;
+  padding-top: 2rem;
 }
 
 [class*="yellow"] {
@@ -127,6 +128,7 @@ p {
 
 .section-hero {
   min-height: 90vh;
+  box-sizing: content-box;
   display: flex;
   //   justify-content: space-around;
   flex-direction: column;
@@ -177,6 +179,23 @@ p {
   }
 }
 
+.section-intro {
+  display: flex;
+  gap: 4rem;
+  .photo-box {
+    img {
+      width: 100%;
+    }
+    flex: 40%;
+  }
+  .message {
+    flex: 60%;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
 .slide {
   background-image: url("../assets/pattern-graphic-design.svg");
   background-repeat: no-repeat;
@@ -219,6 +238,20 @@ p {
 
 /* Responsive Styles */
 @media screen and (max-width: 1200px) and (min-width: 767px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
   [class*="section-"] {
     width: 90vw;
     margin: auto;
@@ -251,9 +284,32 @@ p {
       line-height: 28px;
     }
   }
+
+  .section-intro {
+    display: flex;
+    gap: 4rem;
+    * {
+      flex: 100% !important;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+
   [class*="section-"] {
     width: 90vw;
     margin: auto;
@@ -284,6 +340,13 @@ p {
         margin: 0.5rem 0.25rem;
         height: 25vh;
       }
+
+      .tb-row {
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 60vh;
+        // box-sizing: content-box;
+      }
     }
 
     .slide {
@@ -305,6 +368,15 @@ p {
     .slide-graphic-design {
       background-image: url("../assets/pattern-graphic-design.svg");
       background-size: 25% !important;
+    }
+  }
+
+  .section-intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    * {
+      flex: 100% !important;
     }
   }
 }
