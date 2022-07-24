@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url(../src/assets/fonts/PlusJakartaSans[wght].ttf);
+}
+
+html,
+body {
+  font-family: "PlusJakartaSans" !important;
+  --light-cream1: #fff7f0;
+  --black1: #030303;
+  background-color: var(--light-cream, #fff7f0);
+  color: var(--black, #030303);
+  scroll-behavior: smooth;
+}
